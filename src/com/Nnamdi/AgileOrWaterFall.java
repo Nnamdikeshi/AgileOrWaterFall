@@ -109,9 +109,10 @@ public class AgileOrWaterFall extends JPanel {
         });
     }
         private String agileResults() {
-            String agileResult = "Agile may be better";
-            String waterfallResult = "Waterfall may be better";
-            String indecisiveResult = "Unable to suggest a methodology";
+            String projName = projectName.getText();
+            String agileResult = "For '" + projName + "', Agile may be better";
+            String waterfallResult = "For '" + projName + "', Waterfall may be better";
+            String indecisiveResult = "Unable to suggest a methodology for '" + projName + "'.";
 
             int pointsInFavorOfAgile = 0;
 
